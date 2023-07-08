@@ -9,10 +9,6 @@ load_dotenv()
 # OpenAI API Key
 openai.api_key = os.getenv("OPENAI_API_KEY")
 
-message = {
-    "role":"user",
-    "content":"Tell me three jokes"
-}
 
 def parse_function_response(message):
     function_call = message["function_call"]
